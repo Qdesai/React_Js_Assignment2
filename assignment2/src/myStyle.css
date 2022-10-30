@@ -1,0 +1,22 @@
+.data{
+    width: 600px;
+    margin: 0 auto;
+    background-color:black;
+    color: white;
+}
+
+h1{
+    padding:  3%;
+    background-color: black;
+    color: skyblue;
+}
+
+h2{
+    font-size: 17px;
+}
+
+h2>i{
+    font-size: 22px;
+    color: bisque;
+    text-decoration: underline;
+}

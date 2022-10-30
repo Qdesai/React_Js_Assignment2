@@ -1,5 +1,7 @@
 import logo from './logo.svg';
+import { GithubOutlined } from '@ant-design/icons';
 import './App.css';
+import './myStyle.css';
 import Movie from './Movie';
 
 	
@@ -39,6 +41,9 @@ import Movie from './Movie';
 function App() {
   return (
     <div className="App">
+        <h1><i><GithubOutlined /> Mohammed Qaasim Desai Assignment 2</i></h1>
+        <hr></hr>
+
       {MovieList.map(
         (m)=>{return(<Movie title={m.title} year={m.year} genre={m.genre} director={m.director}/>)}
       )}
