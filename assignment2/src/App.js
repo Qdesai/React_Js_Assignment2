@@ -1,23 +1,49 @@
 import logo from './logo.svg';
 import './App.css';
+import Movie from './Movie';
+
+	
+  const MovieList = [
+    {
+      title:"The Godfather",
+      year:"1972",
+      genre:"Drama",
+      director:"Francis Ford Capolla"
+    },
+    {
+      title:"Superbad",
+      year:"2007",
+      genre:"Comedy",
+      director:"Greg Mottola"
+    },
+    {
+      title:"The Departed",
+      year:"2006",
+      genre:"Drama",
+      director:"Martin Scorsese"
+    },
+    {
+      title:"Saving Private Ryan",
+      year:"1998",
+      genre:"Action",
+      director:"Steven Spielberg"
+    },
+    {
+      title:"The Expendables",
+      year:"2010",
+      genre:"Action",
+      director:"Sylvester Stallone"
+    }
+    ]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {MovieList.map(
+        (m)=>{return(<Movie title={m.title} year={m.year} genre={m.genre} director={m.director}/>)}
+      )}
+
+
     </div>
   );
 }
