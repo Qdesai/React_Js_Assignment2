@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { GithubOutlined } from '@ant-design/icons';
 import './App.css';
 import './myStyle.css';
